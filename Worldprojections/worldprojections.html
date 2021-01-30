@@ -8,21 +8,56 @@
 <body>
     <h1>In this project I learned how to display images in different projections</h1>
     
-    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <h2 style="color:red"></h2>
+    <p>To change the different projections on QGIS, the maps first had to be made. First, I started a new project on QGIS and added vectors that I had downloaded from Sakai which gave me the base map of the different countries. Next to add the projections I went to plugins to make sure I had Indicatrix mapper installed and then clicked on the application and ran it with the automatic inputs. Next in the bottom right corner it listed a ESPG: #####. Then I clicked on that and was able to search for the next ESPG, for example, I searched 53018 and clicked it then okay. I would then save the map and repeat the process by clicking the ESPG in the lower right corner and type in the new ESPG. </p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The shapes of the countries dont appear to be too distorted  but some distortion is possible. The circles on the graph do become distorted as you move to the poles.</h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The shapes of the countries are heavily distored it appears. Additionally the the spacing and shape of the circles become distorted. The highest amount of distortion occurs at the poles.</h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
-    <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
-    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
+    <h2>Pseudo Mercator</h2>
+    <h3>The circles along the equator are not distored but as you go up or down the map to the poles they do become larger. The shapes of the countries are distorted as you go closer to the poles.</h3>
+    <a href="./maps/3857. .png">
+    <img src="./maps/3857. .png" alt="3857" width='500px'>
+    </a>
+    <h2>Sphere Winkel</h2>
+    <h3>The shapes of the countries do not appear to be that distorted in this projection.  Additionally, there are some distortions of the circles mostly at the poles but they are not the distorted.</h3>
+    <a href="./maps/53018.png">
+    <img src="./maps/53018.png" alt="53018" width='500px'>
+    </a>
+    <h2>World Cylindrical Equal Area</h2>
+    <h3>This map is not distorted at the equator and then as you move north and south they become more destorted and are the most at the poles. The shapes of the countries are slightly distorted.</h3>
+    <a href="./maps/54034.png">
+    <img src="./maps/54034.png" alt="54034" width='500px'>
+    </a>
+    <h2>Equidistant Conic</h2>
+    <h3>There is heavy distortion in this map. The circles at the north pole are smaller and then get larger and more distored as you continue down the map. The shapes of the countries are also distorted.</h3>
+    <a href="./maps/54027.png">
+    <img src="./maps/54027.png" alt="54027" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal Equidistnat</h2>
+    <h3>This map uses a circular or sphere model and there is heavy distortion of the circles. The circles get larger and more distored as you go farther away from the north pole. Also part of the map is empty because of the way it is designed. The shapes of the countries are distorted. </h3>
+    <a href="./maps/102016.png">
+    <img src="./maps/102016.png" alt="102016" width='500px'>
+    </a>
+    <h2>Loximuthal</h2>
+    <h3>There is some distortion of the shapes of the countries. Additionally, there the circles at the equator that are distored.  Also the equators have heavily been distorted as well. </h3>
+    <a href="./maps/54023.png">
+    <img src="./maps/54023.png" alt="54023" width='500px'>
+    </a>
+    <h2>Quartic Authalic</h2>
+    <h3>The shapes of the countries are disorted with this projection. Additionally the size of the poles are also distored but the middle three rows of circle are similar in size. Also the shape of the map is not fully a sphere. There does not appear to be any distortion at the equator.</h3>
+    <a href="./maps/54022.png">
+    <img src="./maps/54022.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2 style="color:red"> <u></u></h2>
+    <h3></h3>
     <p></p>
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
